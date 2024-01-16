@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import PageNotFound from "./pages/PageNotFound";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route path="/products" element={<Shop />} />
       <Route path="/about" element={<About />} />
       <Route path="/contacts" element={<Contact />} />
+      <Route path="*" element={<PageNotFound />}></Route>
     </Route>,
   ),
 );
